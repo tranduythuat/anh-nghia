@@ -225,6 +225,18 @@ header {
     color: var(--primary-color);
 }
 
+.parents-info {
+    margin-top: 5%;
+}
+.parents-info p {
+    font-family: "DFVN-CatchyMager-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 10%;
+}
+
 /* Save the Date */
 .save-date {
     text-align: center;
@@ -255,6 +267,11 @@ header {
         font-size: calc((12 / 480) * 100vw);
         letter-spacing: calc((1.4 / 480) * 100vw);
     }
+
+    .parents-info p {
+        font-size: calc((12 / 480) * 100vw);
+    }
+    
     
     .save-date h2 {
         font-size: calc((38 / 480) * 100vw);
@@ -519,12 +536,54 @@ header {
     object-fit: cover;
 }
 
+.dresscode {
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.dresscode h2 {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    margin-bottom: 5%;
+}
+
+.dresscode .items {
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+}
+
+.dresscode .items .item {
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
 
 @media (max-width: 480px) {
     .photo-gallery .text-title {
         font-size: calc((11 / 480) * 100vw);
         letter-spacing: calc((1.2 / 480) * 100vw);
     }
+
+    .dresscode h2 {
+        font-size: calc((50 / 480) * 100vw);
+        letter-spacing: calc((2 / 480) * 100vw);
+    }
+
+    .dresscode .items .item {
+        width: calc((40 / 480) * 100vw);
+    }
+    
 }
 
 /* Quote Section */
