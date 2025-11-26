@@ -40,8 +40,8 @@ async function handleFormSubmit(e) {
 
     const {
         name: name,
-        attendance: confirm,
-        message: message,
+        attendance: attendance,
+        phone: phone,
     } = data;
     console.log("🚀 ~ handleFormSubmit 2~ data:", data);
 
@@ -56,7 +56,7 @@ async function handleFormSubmit(e) {
         },
     });
 
-    const url = "";
+    const url = "https://script.google.com/macros/s/AKfycbyuIUwYjqokrX9YM0QDzD7Oe-PQEBZEYuWzaOATsovCn_lo28FmR09jMG0E5f-_xXgMCQ/exec?sheet=confirm";
 
     try {
         const res = await fetch(url, {
@@ -64,8 +64,8 @@ async function handleFormSubmit(e) {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams({
                 name,
-                confirm,
-                message,
+                attendance,
+                phone,
             }),
         });
 
@@ -76,7 +76,7 @@ async function handleFormSubmit(e) {
 
         // Thông báo thành công
         Swal.fire({
-            title: "Thành công /Success/!",
+            title: "Thành công!",
             text: "Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến dâu rể rồi nha.",
             icon: "success",
             confirmButtonText: "OK",
