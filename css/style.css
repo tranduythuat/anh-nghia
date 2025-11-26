@@ -63,36 +63,36 @@ body {
     background-color: var(--background-color);
     margin: 0 auto;
     color: var(--primary-color);
+    margin-top: 10px;
 }
 
 /* Header Section */
 header {
     text-align: center;
-    padding: 5% 0 4%;
-    font-size: 11.58px;
+    padding-bottom: 4%;
 }
 
 .intro-text {
-    font-size: 11.58px;
+    font-size: 12px;
     font-weight: 300;
     letter-spacing: 1.4px;
-    line-height: 1.6;
+    line-height: 1.3;
     color: black;
 }
 
 /* Names Section */
 .names {
     background-image: url('../images/line-top-1.png'), url('../images/line-top-2.png');
-    background-position: 45% 0%, 100% 100%;
-    background-size: 40%, 40%;
+    background-position: 45% 0%, 93% 100%;
+    background-size: 40%, 45%;
     background-repeat: no-repeat, no-repeat;
     text-align: center;
-    padding: 4% 3% 8%;
+    padding: 4% 3% 10%;
 }
 
 .names h1 {
     font-size: 100px;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 1;
     color: var(--primary-color);
     margin: 2% 0;
@@ -104,7 +104,7 @@ header {
 }
 
 .names h1:last-child {
-    text-align: right;
+    text-align: left;
 }
 
 .names h1:first-child::after {
@@ -121,7 +121,7 @@ header {
 
 @media (max-width: 500px) {
     .intro-text {
-        font-size: calc((11.58 / 500) * 100vw);
+        font-size: calc((12 / 500) * 100vw);
         letter-spacing: calc((1.4 / 500) * 100vw);
     }
     .names h1 {
@@ -134,8 +134,8 @@ header {
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding: 0 6%;
-    margin-top: -4%;
+    padding: 0 10%;
+    margin-top: -5%;
 }
 
 .main-photo .img-box {
@@ -156,7 +156,7 @@ header {
     width: 20%;
     flex-direction: column;
     position: absolute;
-    left: 23%;
+    left: 19%;
     bottom: -2%;
 }
 
@@ -216,13 +216,14 @@ header {
 .wedding-info {
     text-transform: lowercase;
     text-align: right;
-    padding: 12% 5% 5%;
+    padding: 12% 5% 0;
 }
 
 .wedding-info .date-text {
     font-size: 15px;
     font-weight: 300;
-    letter-spacing: 1.4px;
+    letter-spacing: 1px;
+    line-height: 1.3;
     color: var(--primary-color);
 }
 
@@ -231,7 +232,7 @@ header {
 }
 .parents-info p {
     font-family: "DFVN-CatchyMager-Regular", sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 300;
     text-align: left;
     line-height: 1.5;
@@ -241,7 +242,7 @@ header {
 /* Save the Date */
 .save-date {
     text-align: center;
-    padding: 5%; 
+    padding: 5% 5% 2%; 
 }
 
 .save-date h2 {
@@ -265,11 +266,11 @@ header {
 @media (max-width: 500px) {
     .wedding-info .date-text {
         font-size: calc((12 / 500) * 100vw);
-        letter-spacing: calc((1.4 / 500) * 100vw);
+        letter-spacing: calc((1 / 500) * 100vw);
     }
 
     .parents-info p {
-        font-size: calc((12 / 500) * 100vw);
+        font-size: calc((13 / 500) * 100vw);
     }
     
     
@@ -286,12 +287,12 @@ header {
 /* Venue Section */
 .venue {
     text-align: center;
-    padding: 2%;
+    padding: 0 2%;
 }
 
 .venue .venue-description {
     font-family: "SVN-GothamLight", sans-serif;
-    font-size: 10.72px;
+    font-size: 12px;
     font-weight: 300;
     color: var(--primary-color);
     margin: 1% 0;
@@ -307,11 +308,12 @@ header {
     letter-spacing: 2px;
     color: black;
     margin-top: 5%;
+    line-height: 1;
 }
 
 .venue .venue-address {
     font-family: "SVN-GothamLight", sans-serif;
-    font-size: 10.72px;
+    font-size: 12px;
     font-weight: 300;
     color: var(--primary-color);
     line-height: 1.6;
@@ -347,7 +349,7 @@ header {
 
 .venue .date-box .text-date {
     font-family: "SVN-GothamLight", sans-serif;
-    font-size: 10.72px;
+    font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -477,7 +479,8 @@ header {
 
 .time-text {
     font-size: 15px;
-    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-weight: 300;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,6 +504,7 @@ header {
 
     .time-text {
         font-size: calc((15 / 500) * 100vw);
+        letter-spacing: calc((1.2 / 500) * 100vw);
     }
 }
 
@@ -510,8 +514,9 @@ header {
 }
 
 .photo-gallery .text-title {
-    font-size: 11.15px;
-    letter-spacing: 1.2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
     padding-bottom: 2%;
     padding-left: 2%;
 }
@@ -611,9 +616,10 @@ header {
 }
 
 .quote p {
-    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
     font-weight: 300;
-    letter-spacing: 1.4px;
+    /* letter-spacing: 1px; */
     line-height: 1;
     margin: 1% 2%;
     text-transform: uppercase;
@@ -621,7 +627,7 @@ header {
 
 @media (max-width: 500px) {
     .quote p {
-        font-size: calc((13 / 500) * 100vw);
+        font-size: calc((16 / 500) * 100vw);
         letter-spacing: calc((1.4 / 500) * 100vw);
     }
 }
@@ -649,8 +655,9 @@ header {
 }
 
 .rsvp .rsvp-text {
-    font-family: "SVN-GothamLight", sans-serif;
-    font-size: 11px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 12px;
     font-weight: 500;
     color: var(--primary-color);
     margin-bottom: 15px;
@@ -673,13 +680,13 @@ header {
 }
 
 .rsvp-buttons label {
-    font-family: "SVN-GothamLight", sans-serif;
-    padding: 2% 7% 3%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1% 7% 1.3%;
     border: 1px solid #333;
     background-color: #fff;
     color: #333;
-    font-size: 11px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 300;
     cursor: pointer;
     border-radius: 25px;
     transition: all 0.3s ease;
@@ -705,7 +712,7 @@ header {
     padding: 2%;
     border: 1px solid var(--primary-color);
     background-color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     color: #333;
     margin-bottom: 4%;
     border-radius: 15px;
@@ -715,11 +722,11 @@ header {
 
 .message-section input {
     width: 100%;
-    padding: 2%;
+    padding: 2% 3%;
     margin-bottom: 5%;
     border: 1px solid var(--primary-color);
     background-color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     color: #333;
     border-radius: 15px;
     font-family: "SVN-GothamLight", sans-serif;
@@ -733,8 +740,8 @@ header {
     border: 1px solid #333;
     background-color: #cccccb;
     color: #000;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 300;
     letter-spacing: 1px;
     cursor: pointer;
     border-radius: 25px;
@@ -748,39 +755,44 @@ header {
 }
 
 .end-text {
-    padding: 5%;
+    padding: 10% 8% 7%;
 }
 
 .final-note {
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 1px;
     color: var(--primary-color);
-    line-height: 1.6;
+    line-height: 1.2;
     text-align: left;
 }
 
 ::placeholder {
     color: #444444;
-    font-style: italic;
 }
 
 @media (max-width: 500px) {
     .rsvp .rsvp-text {
-        font-size: calc((11 / 500) * 100vw);
+        font-size: calc((12 / 500) * 100vw);
     }
     .rsvp-buttons label {
-        font-size: calc((11 / 500) * 100vw);
+        font-size: calc((13 / 500) * 100vw);
     }
 
     .message-section textarea, 
     .message-section input  {
-        font-size: calc((12 / 500) * 100vw);
+        font-size: calc((13 / 500) * 100vw);
     }
     
     .btn-send {
-        font-size: calc((11 / 500) * 100vw);
+        font-size: calc((15 / 500) * 100vw);
         letter-spacing: calc((1 / 500) * 100vw);
     }
+
+    .final-note {
+        font-size:  calc((13 / 500) * 100vw);
+        letter-spacing:calc((1 / 500) * 100vw);
+    }
+    
 }
 
 /* music */
