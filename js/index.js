@@ -41,7 +41,7 @@ async function handleFormSubmit(e) {
     const {
         name: name,
         attendance: attendance,
-        phone: phone,
+        message: message,
     } = data;
     console.log("🚀 ~ handleFormSubmit 2~ data:", data);
 
@@ -65,7 +65,7 @@ async function handleFormSubmit(e) {
             body: new URLSearchParams({
                 name,
                 attendance,
-                phone,
+                message,
             }),
         });
 
